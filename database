@@ -1,0 +1,129 @@
+CREATE TABLE cap_do_admin 
+(
+	ma_cap_do int PRIMARY KEY AUTO_INCREMENT,
+    ten_cap_do varchar(200) UNIQUE
+);
+CREATE TABLE admin 
+(
+    ma_admin int PRIMARY KEY AUTO_INCREMENT,
+	ma_cap_do int,
+    tai_khoan varchar(200) UNIQUE,
+    mat_khau varchar(200),
+    ten_admin varchar(200),
+    dia_chi text,
+    gioi_tinh int(1),
+    ngay_lap date,
+    SDT int(10),
+    email varchar(200) UNIQUE,
+    FOREIGN KEY (ma_cap_do) REFERENCES cap_do_admin(ma_cap_do)
+);
+CREATE TABLE bai_dang
+(	
+ 	ma_bai_dang int PRIMARY KEY AUTO_INCREMENT,
+    ma_admin int,
+    ten_bai_dang varchar(200) NOT NULL,
+    tieu_de varchar(200) NOT NULL,
+    hinh_anh varchar(200) NOT NULL,
+    chi_tiet text NOT NULL,
+    trang_thai int(1),
+    FOREIGN KEY (ma_admin) REFERENCES admin(ma_admin)
+);
+CREATE TABLE danh_muc_sp
+(	
+ 	ma_danh_muc int PRIMARY KEY AUTO_INCREMENT,
+    ten_danh_muc varchar(200) NOT NULL UNIQUE
+);
+CREATE TABLE san_pham
+(	
+ 	ma_san_pham int PRIMARY KEY AUTO_INCREMENT,
+    ten_san_pham varchar(200) NOT NULL,
+    ma_danh_muc int,
+    gia_tien int NOT NULL,
+    mo_ta text NOT NULL,
+    ngay_san_xuat date NOT NULL,
+    anh_bia varchar(200) NOT NULL,
+    FOREIGN KEY (ma_danh_muc) REFERENCES danh_muc_sp(ma_danh_muc)
+);
+CREATE TABLE anh_chi_tiet_sp
+(
+	ma_san_pham int,
+    ten_anh varchar(200) NOT NULL,
+    FOREIGN KEY (ma_san_pham) REFERENCES san_pham(ma_san_pham)
+);
+CREATE TABLE mau_sac_sp
+(
+	ma_mau_sac int PRIMARY KEY AUTO_INCREMENT,
+    ten_mau varchar(200) NOT NULL,
+    ma_hexa varchar(200) NOT NULL
+);
+CREATE TABLE kich_co_sp
+(
+	ma_kich_co int PRIMARY KEY AUTO_INCREMENT,
+    ten_kich_co varchar(200) NOT NULL
+);
+CREATE TABLE chi_tiet_sp
+(
+    ma_san_pham int NOT NULL,
+	ma_mau_sac int NOT NULL,
+    ma_kich_co int NOT NULL,
+    so_luong int NOT NULL,
+    FOREIGN KEY (ma_san_pham) REFERENCES san_pham(ma_san_pham),
+     FOREIGN KEY (ma_mau_sac) REFERENCES mau_sac_sp(ma_mau_sac),
+     FOREIGN KEY (ma_kich_co) REFERENCES kich_co_sp(ma_kich_co),
+    PRIMARY KEY (ma_san_pham,ma_mau_sac,ma_kich_co)
+);
+CREATE TABLE khach_hang 
+(
+	ma_khach_hang int PRIMARY KEY AUTO_INCREMENT,
+    tai_khoan varchar(200) NOT NULL UNIQUE,
+    mat_khau varchar(200),
+    ten_khach varchar(200) NOT NULL,
+    ngay_sinh date,
+    gioi_tinh int(1),
+    ngay_tao date,
+    SDT int(10),
+    dia_chi text NOT NULL,
+    email varchar(200) NOT NULL UNIQUE
+);
+CREATE TABLE phan_hoi
+(
+	ma_khach_hang int NOT NULL,
+    tieu_de varchar(200) NOT NULL,
+    noi_dung text,
+    FOREIGN KEY(ma_khach_hang) REFERENCES khach_hang(ma_khach_hang)
+);
+CREATE TABLE pt_thanh_toan
+(
+	ma_pt_thanh_toan int PRIMARY KEY AUTO_INCREMENT,
+    ten_pt varchar(200) NOT NULL
+);
+CREATE TABLE pt_van_chuyen
+(
+	ma_pt_van_chuyen int PRIMARY KEY AUTO_INCREMENT,
+    ten_pt varchar(200) NOT NULL,
+    tien_1km int NOT NULL
+);
+CREATE TABLE hoa_don
+(
+	ma_hoa_don int PRIMARY KEY AUTO_INCREMENT,
+    ma_khach_hang int NOT NULL,
+    ma_pt_thanh_toan int NOT NULL,
+    ma_pt_van_chuyen int NOT NULL,
+	trang_thai int(1) NOT NULL,
+    tong_tien int NOT NULL,
+    FOREIGN KEY (ma_khach_hang) REFERENCES khach_hang(ma_khach_hang),
+    FOREIGN KEY (ma_pt_thanh_toan) REFERENCES pt_thanh_toan(ma_pt_thanh_toan),
+    FOREIGN KEY (ma_pt_van_chuyen) REFERENCES pt_van_chuyen(ma_pt_van_chuyen)
+);
+CREATE TABLE chi_tiet_hoa_don 
+(
+	ma_hoa_don int,
+    ma_mau_sac int NOT NULL,
+    ma_san_pham int NOT NULL,
+    ma_kich_co int NOT NULL,
+    ngay_tao date,
+    so_luong int,
+    so_tien int,
+    FOREIGN KEY(ma_san_pham,ma_mau_sac,ma_kich_co) REFERENCES chi_tiet_sp(ma_san_pham,ma_mau_sac,ma_kich_co),
+    FOREIGN KEY (ma_hoa_don) REFERENCES hoa_don(ma_hoa_don)
+);
