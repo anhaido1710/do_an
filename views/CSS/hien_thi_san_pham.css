@@ -1,0 +1,78 @@
+.background-product {
+    float: left;
+    height: 1200px;
+    width: 1200px;
+    margin: 100px 0px 0px 96px;
+}
+.background-detail-product {
+	font-family: Neue-Helvetica,Arial,Sans-Serif;
+    float: left;
+    height: 600px;
+    width: 300px;
+    float: left;
+    margin: 0px 0px 0px 29px;
+    font-size: 16px;
+    font: inherit;
+}
+.picture-background-detail {
+    float: left;
+    height: 480px;
+    width: 100%;
+}
+.color-detail {
+    margin: 12px 0px 0px 0px;
+    float: left;
+    width: 100%;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+.name-background-detail_1 {
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 5px 0px 0px 0px;
+}
+.name-background-detail_2 {
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin: 18px 0px 0px 0px;
+}
+.price-background-detail {
+    float: left;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+}
+.tittle-end {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: condensed;
+    font-size: 40px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+}
+.detail-end {
+    font-size: 14px;
+    float: left;
+    width: 63%;
+    text-align: center;
+    line-height: 16px;
+    margin: 15px 0px 0px 252px;
+    display: inline-block;
+}
+.end-product {
+    float: left;
+    height: 250px;
+    width: 100%;
+    font-family: Neue-Helvetica,Arial,Sans-Serif;
+}
