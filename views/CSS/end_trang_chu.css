@@ -1,0 +1,60 @@
+.join {
+    float: left;
+    width: 420px;
+    height: 150px;
+    text-align: center;
+    margin: 200px 0px 0px 461px;
+}
+.end-all {
+    width: 100%;
+    height: 625px;
+    /* margin: 0; */
+    /* padding: 0; */
+}
+.name-join {
+    font-stretch: condensed;
+    vertical-align: inherit;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    letter-spacing: .3px;
+    font-family: Neue-Helvetica,Arial,Sans-Serif;
+}
+.input-join {
+    float: left;
+    width: 100%;
+    /* background: greenyellow; */
+    height: 80px;
+    /* text-align: center; */
+    margin: 30px 0px 0px 0px;
+}
+input#email {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    font-size: 26px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.3px solid black;
+}
+.join1 {
+    /* FLOAT: LEFT; */
+    float: left;
+    /* background: lightgoldenrodyellow; */
+    height: 150px;
+    width: 760px;
+    margin: 105px 0px 0px 290px;
+    /* position: absolute; */
+    bottom: 0;
+    left: 300px;
+    text-align: center;
+}
+li {
+    float: left;
+    margin: 0px 0px 0px 45px;
+    border-style: none;
+    list-style: none;
+    cursor: pointer;
+}
