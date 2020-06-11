@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.all-page {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.page1 {
+    float: left;
+    background: url('https://static.zara.net/photos//mkt/spots/ss20-north-welcome-back/subhome-xmedia-24//landscape_0.jpg?ts=1591378024003&imwidth=1366')no-repeat center center/cover;
+    height: 625px;
+    width: 100%;
+}
+.page2{
+    float: left;
+    background: blue;
+    height: 625px;
+    width: 100%;
+}
+.page3 {
+    float: left;
+    background: pink;
+    height: 625px;
+    width: 100%;
+}
+.page4 {
+    float: left;
+    background: yellow;
+    height: 625px;
+    width: 100%;
+}
+.page5 {
+    float: left;
+    background: black;
+    height: 625px;
+    width: 100%;
+}
+.page6 {
+    float: left;
+    background: red;
+    height: 625px;
+    width: 100%;
+}
