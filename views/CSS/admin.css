@@ -1,0 +1,629 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+ }
+.left-menu {
+    width: 14%;
+    height: 720px;
+    float: left;
+    /* background: linear-gradient(325deg, rgba(36,36,36,1) 95%, rgba(36,36,36,1) 97%); */
+    /* border-radius: 40px; */
+    border: 1px solid #0000007a;
+    background: whitesmoke;
+    /* margin: 16px 0px 0px 40px; */
+    color: black;
+}
+.giua {
+    width: 60%;
+    height: 720px;
+    /* background: aquamarine; */
+    float: left;
+}
+.phai {
+    float: left;
+    width: 20%;
+    height: 720px;
+}
+.icon {
+    width: 100%;
+    height: 20%;
+    float: left;
+}
+.menu {
+    width: 100%;
+    height: 60%;
+    float: left;
+}
+.menu ul {
+    width: 149px;
+    float: left;
+    /* width: 100%; */
+    height: 100%;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bolder;
+    /* padding: 0; */
+    color: black;
+    margin: 0px 0px 0px 0px;
+    border-radius: 11px 22px 26px -25px;
+    /* border-top-left-radius: 35px; */
+}
+.menu ul li {
+    /* text-align: center; */
+    padding: 0;
+    width: 189px;
+    /* background: yellow; */
+    position: relative;
+    /* border-width: 1px; */
+    height: 48px;
+    /* border-top-left-radius: 32px; */
+    /* border-bottom-left-radius: 32px; */
+    /* text-align: center; */
+    /* padding: 0px 0px; */
+    cursor: pointer;
+    margin: 0px 0px 0px -40px;
+}
+i.fas.fa-tshirt {
+    float: left;
+    margin: 11px 10px 0px 28px;
+    font-size: 23px;
+}
+
+.menu ul li p {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    margin: 17px 0px 0px 50px;
+    padding: 15px 0px 0px 0px;
+    /* float: left; */
+}
+img.rotate360 {
+    float: left;
+    margin: 40px 0px 0px 37px;
+}
+h2 {
+    float: left;
+    color: black;
+    margin: 71px 0px 0px 30px;
+}
+.detail-admin-danhmuc-sp:hover{
+    background: white;
+}
+.menu ul li:hover{
+   
+   background: white;
+
+}   
+.admin {
+    float: left;
+    width: 78%;
+    height: 55px;
+    border-radius: 40px;
+    /* background: red; */
+    border: 1px solid #0000004d;
+    margin: 18px 0px 0px 11px;
+    box-shadow: -1px 0px 4px 0px #0000005e;
+}
+.tai_khoan_admin {
+    width: 100%;
+    height: 20%;
+    float: left;
+}
+button {
+    width: 55px;
+    height: 40px;
+    /* border: solid 1px blue; */
+    color: white;
+    border-radius: 4px;
+    -moz-border-radius: 50%;
+    /* margin: 0px 0px 0px 0px; */
+    cursor: pointer;
+} 
+ p {
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 0px 9px;
+    font-size: 14px;
+}  
+.chung {
+    height: 80px;
+    width: 225px;
+    margin: 24px 0px 0px 33px;
+   background: linear-gradient(325deg, rgba(10,11,11,0.8914916308320203) 0%, rgba(10,11,11,0.8914916308320203) 43%, rgba(0,0,0,1) 80%, rgba(5,22,39,1) 97%);
+
+    border-radius: 18px;
+} 
+.book_new_clothes {
+    width: 100%;
+    height: 20%;
+}
+.book {
+    height: 52px;
+    width: 210px;
+    margin: 71px 0px 0px 33px;
+    background: linear-gradient(325deg, rgba(10,11,11,0.8914916308320203) 0%, rgba(10,11,11,0.8914916308320203) 43%, rgba(0,0,0,1) 80%, rgba(5,22,39,1) 97%);
+    border-radius: 25px;
+}
+button.book_new {
+    width: 40px;
+    height: 40px;
+    border: hidden;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin: -26px 0px 0px 162px;
+    float: left;
+   background: linear-gradient(325deg, rgba(10,11,11,0.8914916308320203) 0%, rgba(10,11,11,0.8914916308320203) 43%, rgba(0,0,0,1) 80%, rgba(5,22,39,1) 97%);
+}
+h6 {
+    float: left;
+    color: white;
+    margin: 19px 0px 0px 23px;
+}
+h6.dau_cong {
+    font-size: 20px;
+    padding: 0px 0px 0px -19px;
+    margin: 0px 0px 0px 9px;
+}
+ h6.up_coming {
+    color: black;
+    font-size: 20px;
+    margin: 71px 0px 0px 100px;
+}    
+.danh_muc_admin{
+    display: none;
+}
+.detail-admin-danhmuc-sp {
+    /* background: white; */
+    color: #00000094;
+    padding: 0px 0px 0px 10px;
+    margin: 3px 0px 0px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    /* border: 1px solid; */
+    height: 40px;
+    cursor: pointer;
+    /* border-bottom-left-radius: 10px; */
+    /* border-top-left-radius: 10px; */
+    text-align: center;
+    line-height: 40px;
+    border-top: 1px solid #ada5a5;
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-right: none;
+}
+.admin-right-menu {
+    float: left;
+    width: 77%;
+    background: whitesmoke;
+    border: 1px solid #0000004d;
+    height: auto;
+    box-shadow: 0px 1px 4px 0px #0000005e;
+    border-radius: 40px;
+    margin: 18px 0px 0px 11px;
+    padding: 10px;
+    /* background: yellow; */
+}
+.admin-right-tittle {
+    float: left;
+    height: 170px;
+    width: 100%;
+    margin: 150px 0px 0px 0px;
+}
+.detail-menu-admin {
+    float: left;
+    width: 200px;
+    height: 140px;
+    margin: 0px 0px 0px 22px;
+    display: none;
+    overflow: auto;
+}
+.detail-detail-menu-admin {
+    /* margin: 2px 0px 0px 0px; */
+    border: 1px solid;
+    font-size: 15px;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.click-nhom_sp_admin {
+    font-size: 15px;
+    height: auto;
+    width: 198px;
+    margin: 0px 0px 0px 22px;
+    border: 1px solid;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+td {
+    width: 78px;
+    text-align: center;
+    border: 1px solid;
+    height: 50px;
+}
+p.table {
+    color: black;
+    background: red;
+    width: 370px;
+    height: 50px;
+    line-height: 45px;
+    overflow: hidden;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+td.update {
+    cursor: pointer;
+}
+td.delete {
+    cursor: pointer;
+}
+td.detail {
+    cursor: pointer;
+}
+.page-detail {
+    float: left;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+}
+.page-true {
+    float: left;
+    height: 100%;
+    /* background: red; */
+    width: 180px;
+    padding: 0px 0px;
+    /* right: 0; */
+    line-height: 35px;
+}
+a.down {
+    float: left;
+    margin: 5px 5px 0px 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.true-page {
+    float: left;
+    margin: 5px 5px 0px 0px;
+    /* background: yellow; */
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid;
+}
+a.up {
+    float: left;
+    margin: 5px 0px 0px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.down:hover{
+    color: blue;
+}
+.up:hover{
+    color: blue;
+}
+.mota p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    width: 180px;
+}
+.name-pro{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    width: 200px;
+}
+.all-size {
+    float: left;
+    /* margin: 0px 0px 0px 0px; */
+    margin: 12px 0px 0px 800px;
+}
+.change-size{
+    float: left;
+}
+button.detail {
+    background: green;
+}
+button.delete {
+    background: #f31515;
+}
+table {
+    margin: 0px 0px 0px 40px;
+}
+.update-page {
+    float: left;
+    width: 100%;
+    height: 1100px;
+    /* background: red; */
+    margin: 74px 0px 0px 0px;
+    border-top: 1px solid #00000047;
+}
+.background-detail-admin {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 0px 0px 0px 330px;
+}
+.update1 {
+    float: left;
+    height: 100%;
+    background: yellow;
+    width: 17%;
+    text-align: center;
+}
+p.back-detail {
+    color: black;
+    font-size: 15px;
+}
+.update2 {
+    float: left;
+    background: yellowgreen;
+    height: 100%;
+    width: 83%;
+}
+.background {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background: blue;
+}
+.infor-detail {
+    float: left;
+    /* background: #3c482a; */
+    height: 175px;
+    width: 500px;
+    margin: 0px 0px 0px 185px;
+    text-align: center;
+    padding: 18px 0px 0px 0px;
+    line-height: 25px;
+    overflow: auto;
+}
+.detail-back {
+    float: left;
+    width: 100%;
+    background: azure;
+    height: 200px;
+}
+.color-pro {
+    float: left;
+    background: beige;
+    height: 50px;
+    width: 100%;
+}
+.size-pro {
+    float: left;
+    background: red;
+    height: 50px;
+    width: 100%;
+}
+.background-detail-pro {
+    height: 100%;
+    width: 119px;
+    float: left;
+    margin: 0px 0px 0px 8px;
+    cursor: pointer;
+}
+.background-detail-pro:hover{
+    opacity: 0.6;
+}
+.color-detail1 {
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin: 8px 0px 0px 15px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.size-pro1 {
+    float: left;
+    height: 30px;
+    width: 30px;
+    background: white;
+    margin: 11px 0px 0px 15px;
+    text-align: center;
+    /* padding: 3px 0px 0px 0px; */
+    line-height: 29px;
+    border: 1px solid;
+}
+.name-pro1{
+    cursor: pointer;
+}
+.name-pro1:hover{
+    color: red;
+}
+.ma-pro{
+    cursor: pointer;
+}
+.ma-pro:hover{
+    color: red;
+}
+.pri-pro{
+    cursor: pointer;
+}
+.pri-pro:hover{
+    color: red;
+}
+.date-pro{
+    cursor: pointer;
+}
+.date-pro:hover{
+    color: red;
+}
+.detail-pro{
+    cursor: pointer;
+}
+.detail-pro:hover{
+    color: red;
+}
+.button-choice {
+    float: left;
+    margin: 50px 0px 0px 393px;
+}
+button#update {
+    background: #41b341;
+    width: 100px;
+}
+.choice-file {
+    float: left;
+    height: 50px;
+    line-height: 45px;
+}
+.choice-file1.choice {
+    float: left;
+    width: 100%;
+    background: red;
+    text-align: center;
+}
+.inf-new.choice {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.color-new.choice {
+    width: 100%;
+    float: left;
+}
+.size-new.choice {
+    float: left;
+    width: 100%;
+}
+.clis {
+    width: 50px;
+    height: 30px;
+    color: black;
+}
+span#back {
+    float: left;
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+span#inf-new1 {
+    float: left;
+    /* width: 96%; */
+    text-align: center;
+    color: red;
+    /* padding: 0px 0px 0px 80px; */
+    margin: 0px 0px 0px 400px;
+}
+span#file1-new {
+    float: left;
+    width: 100%;
+    color: red;
+}
+span#color-new1 {
+    float: left;
+    width: 100%;
+    /* background: red; */
+    color: red;
+}
+span#size-new1 {
+    float: left;
+    width: 100%;
+    color: red;
+}
+.tittle_add {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 75px 0px 0px 375px;
+}
+table.table_detail {
+    width: 994px;
+    margin: 10px 0px 0px 40px;
+}
+td.price_add {
+    width: 28px;
+}
+td.ngay_add {
+    width: 37px;
+}
+td.mo_ta_add {
+    width: 244px;
+}
+.tittle_add2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 75px 0px 0px 387px;
+}
+.table_detail2 {
+    margin: 10px 0px 0px 40px;
+}
+label.back_add_all {
+    float: left;
+    height: 200px;
+    width: 130px;
+    cursor: pointer;
+    /* margin: 0px 0px 0px 0px; */
+}
+.back_add {
+    height: 100%;
+    width: 100%;
+}
+table.table_detail3 {
+    margin: 30px 0px 0px 5%;
+}
+.add_detail_color {
+    height: 35px;
+    width: 35px;
+    margin: 0px 0px 0px 5px;
+    cursor: pointer;
+}
+td.color_add {
+    width: 50px;
+    height: 50px;
+}
+.color_add2 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px 0px 0px 10px;
+}
+.size_add2{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 30px 0px 0px 10px;
+}
+table.table_detail4 {
+    margin: 30px 0px 0px 5%;
+}
+td.size_add {
+    width: 30px;
+    height: 30px;
+}
+.back_add2{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 30px 0px 0px 10px;
+}
+.up_date {
+    margin: 45px 0px 0px 795px;
+    background: #1d9e1dbf;
+    width: 80px;
+    height: 32px;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.sua2 {
+    margin: 20px 0px 0px 5%;
+    position: relative;
+}
+.sua1 {
+    margin: 38px 0px 0px 5%;
+    position: relative;
+}
